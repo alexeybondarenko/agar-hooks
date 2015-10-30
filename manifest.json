@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+
+  "name": "Agar.io Hooks",
+  "description": "This extension add additionals for Agar.io. Enjoy :0",
+  "version": "1.0.1.1",
+
+  "browser_action": {},
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://agar.io/*"],
+      "js": ["agar-hooks.js"]
+    }
+  ],
+  "web_accessible_resources": ["magic.js"]
+}
